@@ -1,0 +1,1 @@
+Directory for the behind-the-scenes code to open and communicate with the i2c and adc pins. 

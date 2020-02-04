@@ -193,6 +193,9 @@ void InitADC(void){
   // Since sample sequence 3 is now configured, it must be enabled.
   //
   ADCSequenceEnable(ADC0_BASE, 3);
+  //  new: use hardware sampling function 
+  // can turn this off or change  second argument to any number x [0-6] (2^x samples)
+  ADCHardwareOversampleConfigure(ADC0_BASE,2);
   //
   // Clear the interrupt status flag.  This is done to make sure the
   // interrupt flag is cleared before we sample.
